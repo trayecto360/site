@@ -1,6 +1,14 @@
 <?php
 require 'PHPMailer/PHPMailerAutoload.php';
 
+//for using the base_url() function
+$this->load->helper('url');
+
+echo "<script type='javascript/text'>";
+echo "alert('There are no fields to generate a report');"
+echo "window.location.href = '" . base_url() . "admin/ahm/panel';"
+echo "</script>";
+
 // Check for empty fields
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||

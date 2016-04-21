@@ -513,3 +513,27 @@ footer .footer-below {
     opacity: 0.78;
     width: 100%;
 }
+
+.ul-imagen {
+    padding-top: 20px;
+    list-style-image: url(../img/logos/icono-uno-mini.png);
+}
+
+.container-price {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.table-price {
+    width: 100%;
+}
+.table-price tr {
+    padding-bottom: 20px;
+}
+.td-title {
+    padding: 0px 10px 10px 10px;
+    text-align: right;
+}
+.td-dato {
+    padding: 0px 10px 10px 10px;
+    text-align: left;
+}

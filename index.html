@@ -150,6 +150,7 @@
 
                 </div>
             </div>
+
             <div class="row" style="padding-top: 60px">
                 <div class="col-lg-5 col-lg-offset-1 ">
                     <div class="timeline-image col-lg-offset-1">
@@ -157,7 +158,7 @@
                     </div>
                     <ul class="ul-imagen">
                         <li><p><strong>Iris360</strong> de <strong>NCTech</strong> es la única cámara esférica aprovada por Google para usarla
-                            en la creación de recorridos para Google Street View Inside</p></li>
+                            en la creación de recorridos para Google Street View Inside </p></li>
                         <li>
                             <p><strong>Trayecto360</strong> es la única agencia en Chihuahua y de las pocas en todo México
                                 que tiene la <strong>Iris360</strong></p>
@@ -181,17 +182,140 @@
                     <ul class="ul-imagen">
                         <li>
                             <p><strong>NCTech</strong> a trabajado en conjunto con Google para desarrollar la cámara <strong>Iris360</strong>
-                                con tecnología de punta capaz de capturar foto-esferas de 360° con un sólo disparo, de alta resolución y cálidad
+                                con tecnología de punta capaz de capturar foto-esferas de 360° con un sólo disparo, de alta resolución y cálidad</p>
                         </li>
                         <li>
                             <p>La cámara <strong>Iris360</strong> también es capaz
-                                de publicar automática y directamente en la aplicación de Google Street View
+                                de publicar automática y directamente en la aplicación de Google Street View</p>
+                        </li>
+                        <li>
+                            <p>Los recorridos aparence como el enlace <a href="https://goo.gl/1tlnSU" target="_blank">"Ver por dentro"</a> en los resultados
+                                del buscador de Google, en las búsquedas de lugares en Google Maps (e.g. <a href="https://goo.gl/cmwQIU" target="_blank">Bar Bocce</a>
+                                ) o como puntos naranjas en Google Street View
+                            </p>
+
                         </li>
                     </ul>
                 </div>
             </div>
+
+            <div class="row" style="padding-top: 60px">
+                <div class="col-lg-4 col-lg-offset-2 ">
+                    <div class="timeline-image">
+                    <div id="street-view"></div>
+                    <script>
+                        var panorama;
+                        function initialize() {
+                            panorama = new google.maps.StreetViewPanorama(
+                                    document.getElementById('street-view'),
+                                    {
+                                        position: {lat: 37.869260, lng: -122.254811},
+                                        pov: {heading: 165, pitch: 0},
+                                        zoom: 1
+                                    });
+                        }
+
+                    </script>
+                    <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ccVpzldUy7Jn-g4arKbNr1zUcSnLd_Y&signed_in=true&callback=initialize">
+                    </script>
+                    </div>
+
+                </div>
+                <div class="col-lg-5">
+                    <ul class="ul-imagen">
+                        <li>
+                            <p>Un Rollo</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
+    <!-- api key AIzaSyC6ccVpzldUy7Jn-g4arKbNr1zUcSnLd_Y -->
+
+
+
+    <section id="cards">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-subheading">Cards</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h4 class="service-heading">aquí van las cards...</h4>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-responsive" src="img/pantalla-a.png" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-block">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/profile.png" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-block">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" data-src="/img/profile.png" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-block">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!-- container -->
+    </section>
+
+
 
     <!-- Services Section -->
     <section id="precios">
@@ -713,7 +837,7 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ccVpzldUy7Jn-g4arKbNr1zUcSnLd_Y"></script> -->
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>

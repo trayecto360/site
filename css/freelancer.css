@@ -537,3 +537,31 @@ footer .footer-below {
     padding: 0px 10px 10px 10px;
     text-align: left;
 }
+
+.street-view {
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .card {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        margin: 0 25px -95px 25px;
+        position: relative;
+        top: 60px;
+    }
+}
+.card {
+    background-color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 370px;
+    z-index: 1;
+}

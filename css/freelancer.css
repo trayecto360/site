@@ -172,7 +172,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
 }
 
 section h2 {
@@ -542,7 +542,7 @@ footer .footer-below {
     height: 100%;
 }
 
-@media (min-width: 768px) {
+@media(min-width: 768px) {
     .card {
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         margin: 0 25px -95px 25px;
@@ -551,6 +551,7 @@ footer .footer-below {
     }
 }
 .card {
+    padding: 10px;
     background-color: #fff;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -562,6 +563,7 @@ footer .footer-below {
     -ms-flex-pack: flex-start;
     justify-content: flex-start;
     margin: 0 auto;
-    max-width: 370px;
+    max-width: 500px;
     z-index: 1;
 }
+

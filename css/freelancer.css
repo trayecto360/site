@@ -108,6 +108,13 @@ header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
+header .intro-text .skull {
+    display: block;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 4.75em;
+    font-weight: 700;
+    color: #e43725;
+}
 
 @media(min-width:768px) {
     header .container {
@@ -122,11 +129,14 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+    header .intro-text .skills {
+        font-size: 4.75em;
+    }
 }
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 10px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -480,7 +490,7 @@ footer .footer-below {
     border-right: none;
     position: relative;
     padding: 20px;
-    top: 110px;
+    top: 60px;
 }
 .mine  {
     z-index: 1;

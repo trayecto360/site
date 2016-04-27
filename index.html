@@ -83,7 +83,14 @@
 <!-- My Header -->
 <div class="row">
     <div class="col-lg-12 text-center">
-    <div class="header header-container col-lg-12" style="background: url(img/photo-bocadillos-2.png) no-repeat ">
+    <div class="header header-container col-lg-12"
+         style="
+                background: url(img/photo-bocadillos-2.png) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+             ">
         <!--
         <div class="video-container">
             <video id="video" preload="true" autoplay="autoplay" muted="muted" poster="/img/maxresdefault.jpg">
@@ -99,7 +106,13 @@
 
                 <!-- <img class="img-responsive" src="img/profile.png" alt=""> -->
                 <div class="intro-text" style="min-height: 60vh; display: flex; align-items: center;">
-                    <h1 class="skull" style="color: blue; padding-top: 30px; width: 100%;">Google Street View dentro de su Negocio</h1>
+                    <h1 class="skull"
+                            style="padding-top: 30px; width: 100%;
+                                -webkit-text-fill-color: white;
+                                -webkit-text-stroke: 1px black;
+                            ">
+                        Google Street View dentro de su Negocio
+                    </h1>
                 </div>
                 <span style="font-weight: 900; bottom: 10px; left: 10px; position: absolute;"><a href="https://goo.gl/n8xMck" target="_blank">Ver en Google Maps</a></span>
         </div>
@@ -110,12 +123,15 @@
 <!-- GSV Section -->
 <section class="info" id="GSV">
     <div class="container-out">
+
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h3>Google Street View dentro de tu Negocio</h3>
+                <h4 class="section-subheading">¿Ya sabe que es Google Street View?</h4>
+                <h3 class="service-heading">Ahora imagíneselo dentro de su propio Negocio</h3>
                 <img class="img-responsive img-centered" src="img/logos/icono-uno.png" alt="">
             </div>
         </div>
+
         <div class="row" style="padding-top: 30px">
             <div class="col-lg-6 col-lg-offset-1 ">
                 <div class="timeline-image">

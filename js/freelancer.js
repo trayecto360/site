@@ -40,3 +40,9 @@ $('video').on('ended', function () {
     this.load();
     this.play();
 });
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+$('#face-pris').addClass('disabled');

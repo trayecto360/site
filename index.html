@@ -105,7 +105,11 @@
             -->
 
                 <!-- <img class="img-responsive" src="img/profile.png" alt=""> -->
-                <div class="intro-text" style="min-height: 60vh; display: flex; align-items: center;">
+                <div class="intro-text" style="min-height: 60vh; display: flex; align-items: center;
+                                                position:relative;
+                                top:10%;
+
+                ">
                     <h1 class="skull"
                             style="padding-top: 30px; width: 100%;
                                 -webkit-text-fill-color: white;
@@ -493,45 +497,86 @@
             <div class="col-sm-4">
                 <div class="team-member">
                     <img src="img/team/yo.png" class="img-responsive img-circle" alt="">
-                    <h4 class="social-buttons">Juan Calderón
-                        <a href="https://www.facebook.com/Chauderon"><i class="fa fa-facebook"></i></a>
-                    </h4>
+                    <h4 >Juan Calderón</h4>
                     <p class="text-muted" style="margin-bottom: 5px;">Experto en tecnologías Google</p>
                     <p class="text-muted" style="font-size: smaller;">MSc Web Technologies at <a
                             href="http://mcs.unibnf.ch/" target="_blank">UniBNF</a> en Suiza</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                    <h4>Larry Parker</h4>
-                    <p class="text-muted">Lead Marketer</p>
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        <li>
+                            <a href="https://www.facebook.com/Chauderon">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <!-- <a href="https://www.facebook.com/Chauderon"><i class="fa fa-facebook-square"></i></a> -->
                         </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <li>
+                            <a href="mailto:juan.calderon@trayecto360.com" data-toggle="tooltip"  data-placement="rigth" title="juan.calderon@trayecto360.com">
+                                <span class="fa-stack fa-lg" >
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                    <h4>Diana Pertersen</h4>
-                    <p class="text-muted">Lead Developer</p>
+                    <img src="img/team/yo.png" class="img-responsive img-circle" alt="">
+                    <h4 >Priscila Prieto</h4>
+                    <p class="text-muted" style="margin-bottom: 5px;">Ventas y administración</p>
+                    <p class="text-muted" style="font-size: smaller;">ML Adminstración de empresas <a
+                            href="http://www.auch.mx/" target="_blank">Uach</a></p>
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        <li>
+                            <a href="#" id="face-pris">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
                         </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <li>
+                            <a href="mailto:juan.calderon@trayecto360.com" data-toggle="tooltip"  data-placement="rigth" title="priscila.prieto@trayecto360.com">
+                                <span class="fa-stack fa-lg" >
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img src="img/team/yo.png" class="img-responsive img-circle" alt="">
+                    <h4 >Juan Calderón</h4>
+                    <p class="text-muted" style="margin-bottom: 5px;">Experto en tecnologías Google</p>
+                    <p class="text-muted" style="font-size: smaller;">MSc Web Technologies at <a
+                            href="http://mcs.unibnf.ch/" target="_blank">UniBNF</a> en Suiza</p>
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="https://www.facebook.com/Chauderon">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <!-- <a href="https://www.facebook.com/Chauderon"><i class="fa fa-facebook-square"></i></a> -->
+                        </li>
+                        <li>
+                            <a href="mailto:trayecto.360@gmail.com" data-toggle="tooltip"  data-placement="rigth" title="juan.calderon@trayecto360.com">
+                                <span class="fa-stack fa-lg" >
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <p class="large text-muted">Somos un equipo interdisciplanario. En nuestro quehacer profesional
@@ -563,7 +608,7 @@
             <div class="col-lg-4 text-center">
                 <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"
                    style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;"></i>
-                <p><a href="mailto:trayecto.360@gmail.com">trayecto.360@gmail.com</a></p>
+                <p><a href="mailto:trayecto.360@gmail.com">info@trayecto360.com</a></p>
             </div>
         </div>
 

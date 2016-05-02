@@ -4,7 +4,6 @@ $(function() {
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
-            alert('Uno');
         },
         submitSuccess: function($form, event) {
 

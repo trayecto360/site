@@ -1,4 +1,10 @@
 <?php
+
+echo "<script>
+alert('There are no fields to generate a report');
+window.location.href='admin/ahm/panel';
+</script>";
+
 // Check for empty fields
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||

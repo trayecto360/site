@@ -54,10 +54,10 @@
 <body id="page-top" class="index">
 
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav id="nav-id"  class="navbar navbar-default navbar-fixed-top" >
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
+        <div  class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -100,56 +100,41 @@
 </nav>
 
 <!-- My Header -->
-<div class="row">
-    <div class="col-lg-12 text-center">
-        <div class="header header-container col-lg-12" style="
-             padding-right: 0px;
-             padding-left: 0px;
-                 height: 400px;
-             "
-        >
+<header>
+    <div id="my-id" class="container-my">
+        <div class="row">
+            <div class="col-lg-12 text-center">
 
-            <div id="street-view" class="col-lg-12" style="height: 60vh; width: 100%; display: block;">
-                <script>
-                    var panorama;
-                    function initialize() {
-                        panorama = new google.maps.StreetViewPanorama(
-                                document.getElementById('street-view'),
-                                {
-                                    position: {lat: 37.7958054, lng: -122.403259},
-                                    pov: {heading: 65, pitch: -2},
-                                    zoom: -6,
-                                    scrollwheel: false
-                                });
+                <div id="street-view" class="col-lg-12"
+                     style="height: 60vh; width: 100%; display: block; border: 1px dotted red; ">
+                    <script>
+                        var panorama;
+                        function initialize() {
+                            panorama = new google.maps.StreetViewPanorama(
+                                    document.getElementById('street-view'),
+                                    {
+                                        position: {lat: 37.7958054, lng: -122.403259},
+                                        pov: {heading: 65, pitch: -2},
+                                        zoom: -6,
+                                        scrollwheel: false
+                                    });
 //http://stackoverflow.com/questions/21992498/disable-mouse-scroll-wheel-zoom-on-embedded-google-maps
 
-//                        document.getElementById('street-view'),
-//                        {
-//                            position: {lat: 37.869260, lng: -122.254811},
-//                            pov: {heading: 165, pitch: 0},
-//                            zoom: 1
-//                        });
+                        }
 
-//                        https://www.google.com.mx/maps/place/Bocadillos
-                                // /@37.7958054,-122.403259,3a,75y,47h,90t/data=!3m8!1e1!3m6!1sHAjZcfpCLUkAAAQJONNqAw!2e0!3e2!6s%2F%2Fgeo1.ggpht.com%
-                                // 2Fcbk%3Fpanoid%3DHAjZcfpCLUkAAAQJONNqAw%26output%3Dthumbnail%26cb_client%3Dsearch.
-                                // TACTILE.gps%26thumb%3D2%26w%3D129%26h%3D106%26yaw%3D47.834694%26pitch%3D0!7i13312!8i6656!4m5!3m4
-                                // !1s0x8085808ace98d18b:0x92a1f8029e496e31!8m2!3d37.795813!4d-122.4032062!6m1!1e1?hl=en
-                    }
+                    </script>
+                    <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ccVpzldUy7Jn-g4arKbNr1zUcSnLd_Y&signed_in=true&callback=initialize">
+                    </script>
+                </div>
 
-                </script>
-                <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ccVpzldUy7Jn-g4arKbNr1zUcSnLd_Y&signed_in=true&callback=initialize">
-                </script>
             </div>
-
         </div>
-
     </div>
-</div>
+</header>
 
 <!-- GSV Section -->
-<section class="info" id="GSV">
+<section class="info" id="GSV" style="border: 1px double blue; padding-top: 0;">
     <div class="container-out">
 
         <div class="row">

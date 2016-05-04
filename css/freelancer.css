@@ -90,7 +90,6 @@ header .container {
     padding-top: 100px;
     padding-bottom: 50px;
 }
-
 header img {
     display: block;
     margin: 0 auto 20px;
@@ -469,60 +468,7 @@ footer .footer-below {
     opacity: 0;
 }
 
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
 
-@media(min-width:767px) {
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
-}
-
-
-.header-container {
-    width: 100%;
-    height: 600px;
-    border-left: none;
-    border-right: none;
-    position: relative;
-    padding: 20px;
-    top: 60px;
-}
-.mine  {
-    z-index: 1;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10%;
-    padding: 10px;
-    width: 700px;
-    letter-spacing: 3px;
-    font-size: 25px;
-    font-weight: 700;
-}
-.name {
-    font-size: 3.75em;
-    font-weight: 700;
-}
-.video-container {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    border-bottom: 1px solid lightgray;
-}
-#video{
-    position: absolute;
-    z-index: -1;
-    opacity: 0.78;
-    width: 100%;
-}
 
 .ul-imagen {
     padding-top: 20px;
@@ -584,3 +530,4 @@ footer .footer-below {
     position: initial !important;
     bottom: 4px;
 }
+

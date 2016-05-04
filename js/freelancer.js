@@ -46,3 +46,12 @@ $(document).ready(function(){
 });
 
 $('#face-pris').addClass('disabled');
+
+$( window ).resize(function() {
+    var curHeight = $("#nav-id").height();
+    var curT = $("#nav-id").css('padding-top').replace("px", "")
+    var curB =  $("#nav-id").css('padding-bottom').replace("px", "");
+    var t = Number(curHeight) + Number(curB) + Number(curT);
+    //alert(t);
+    $('#my-id').css('padding-top', t + 'px');
+});

@@ -47,11 +47,20 @@ $(document).ready(function(){
 
 $('#face-pris').addClass('disabled');
 
+/* Coloca el tour del header por dabajo de la barra de nav */
+var preHeight = $("#nav-id").height();
+var curHeight = $("#nav-id").height();
+var curT = $("#nav-id").css('padding-top').replace("px", "")
+var curB = $("#nav-id").css('padding-bottom').replace("px", "");
+var t = Number(curHeight) + Number(curB) + Number(curT);
+$('#my-id').css('padding-top', t + 'px');
 $( window ).resize(function() {
-    var curHeight = $("#nav-id").height();
-    var curT = $("#nav-id").css('padding-top').replace("px", "")
-    var curB =  $("#nav-id").css('padding-bottom').replace("px", "");
-    var t = Number(curHeight) + Number(curB) + Number(curT);
-    //alert(t);
-    $('#my-id').css('padding-top', t + 'px');
+    curHeight = $("#nav-id").height();
+    if (curHeight !== preHeight) {
+        curT = $("#nav-id").css('padding-top').replace("px", "")
+        curB = $("#nav-id").css('padding-bottom').replace("px", "");
+        t = Number(curHeight) + Number(curB) + Number(curT);
+        $('#my-id').css('padding-top', t + 'px');
+        preHeight = curHeight;
+    }
 });

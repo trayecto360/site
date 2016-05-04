@@ -54,10 +54,10 @@
 <body id="page-top" class="index">
 
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav id="nav-id"  class="navbar navbar-default navbar-fixed-top" >
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
+        <div  class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -100,65 +100,57 @@
 </nav>
 
 <!-- My Header -->
-<div class="row">
-    <div class="col-lg-12 text-center">
-        <div class="header header-container col-lg-12"
-             style="
-                background: url(img/photo-bocadillos-4.png) no-repeat center center fixed;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-             ">
-            <!--
-            <div class="video-container">
-                <video id="video" preload="true" autoplay="autoplay" muted="muted" poster="/img/maxresdefault.jpg">
-                    <source src="video/videoplayback.mp4" type="video/mp4"/>
-                    <source src="video/videoplayback.webm" type="video/webm"/>
-                </video>
-            </div>
-            -->
+<header>
+    <div id="my-id" class="container-my">
+        <div class="row">
+            <div class="col-lg-12 text-center">
 
-            <!--
-            <img src="img/photo-bocadillos-2.png" class="img-responsive">
-            -->
+                <div id="street-view" class="col-lg-12" style="height: 60vh; width: 100%; display: block; ">
+                    <script>
+                        var panorama;
+                        function initialize() {
+                            panorama = new google.maps.StreetViewPanorama(
+                                    document.getElementById('street-view'),
+                                    {
+                                        position: {lat: 37.7958054, lng: -122.403259},
+                                        pov: {heading: 65, pitch: -2},
+                                        zoom: -6,
+                                        scrollwheel: false
+                                    });
+//http://stackoverflow.com/questions/21992498/disable-mouse-scroll-wheel-zoom-on-embedded-google-maps
+                        }
 
-            <!-- <img class="img-responsive" src="img/profile.png" alt=""> -->
-            <div class="intro-text" style="min-height: 60vh; display: flex; align-items: center;
-                                                position:relative;
-                                top:10%;
+                    </script>
+                    <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ccVpzldUy7Jn-g4arKbNr1zUcSnLd_Y&signed_in=true&callback=initialize">
+                    </script>
+                </div>
 
+                <div class="intro-text" style="
+                    position: absolute;
+                    margin: auto;
+                    top: 100px;
+                    right: 0;
+                    left: 0;
+                    height: 0;
                 ">
-                <h1 class="skull"
-                    style="padding-top: 30px; width: 100%;
+                    <h1 class="skull"
+                        style="padding-top: 30px; width: 100%;
                                 -webkit-text-fill-color: white;
                                 -webkit-text-stroke: 2px #2c3e50;
                                 font-size: -webkit-xxx-large;
                             ">
-                    Google Street View dentro de tu Negocio
-                </h1>
+                        Google Street View dentro de tu Negocio
+                    </h1>
+                </div>
 
-            </div>
-            <div style="
-                    color: #fff;
-                    left: 0;
-                    bottom: 0;
-                    background: rgba(0,0,0,0.7);
-                    padding: 10px 20px;
-                    position: absolute;
-                    white-space: nowrap;
-                    font-size: large;
-                    font-weight: bold;
-                ">
-                <a href="https://goo.gl/n8xMck" target="_blank">Verlo en Google Maps</a>
             </div>
         </div>
-
     </div>
-</div>
+</header>
 
 <!-- GSV Section -->
-<section class="info" id="GSV">
+<section class="info" id="GSV" >
     <div class="container-out">
 
         <div class="row">
@@ -286,7 +278,7 @@
 </section>
 
 <!-- Iris360 Section -->
-<section id="iris360">
+<section id="iris360"  >
     <div class="container-out">
 
         <div class="row">
@@ -361,7 +353,7 @@
 
 
 <!-- Proceso Section -->
-<section id="proceso">
+<section id="proceso"  >
     <div class="container-out">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2" style="padding-bottom: 20px;">
@@ -432,7 +424,7 @@
 </section>
 
 <!-- Why Section -->
-<section id="why">
+<section id="why" >
     <div class="container">
 
         <div class="row">
@@ -509,7 +501,7 @@
 </section>
 
 <!-- Team Section -->
-<section id="team" class="bg-light-gray"> <!--class="success"-->
+<section id="team" class="bg-light-gray "  > <!--class="success"-->
     <div class="container ">
 
         <div class="row">
@@ -631,7 +623,7 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact">
+<section id="contact"  class="success">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">

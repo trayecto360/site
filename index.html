@@ -105,7 +105,8 @@
         <div class="row">
             <div class="col-lg-12 text-center">
 
-                <div id="street-view" class="col-lg-12" style="height: 60vh; width: 100%; display: block; ">
+                <div id="street-view" class="col-lg-12"
+                     style="height: 60vh; width: 100%; display: block; ">
                     <script>
                         var panorama;
                         function initialize() {
@@ -118,6 +119,7 @@
                                         scrollwheel: false
                                     });
 //http://stackoverflow.com/questions/21992498/disable-mouse-scroll-wheel-zoom-on-embedded-google-maps
+
                         }
 
                     </script>
@@ -126,31 +128,13 @@
                     </script>
                 </div>
 
-                <div class="intro-text" style="
-                    position: absolute;
-                    margin: auto;
-                    top: 100px;
-                    right: 0;
-                    left: 0;
-                    height: 0;
-                ">
-                    <h1 class="skull"
-                        style="padding-top: 30px; width: 100%;
-                                -webkit-text-fill-color: white;
-                                -webkit-text-stroke: 2px #2c3e50;
-                                font-size: -webkit-xxx-large;
-                            ">
-                        Google Street View dentro de tu Negocio
-                    </h1>
-                </div>
-
             </div>
         </div>
     </div>
 </header>
 
 <!-- GSV Section -->
-<section class="info" id="GSV" >
+<section class="info" id="GSV">
     <div class="container-out">
 
         <div class="row">
@@ -222,22 +206,33 @@
             </div>
         </div>
 
-        <div class="row ">
-            <div class="col-md-4 col-lg-offset-2">
+        <div class="row text-justify">
+            <div class="col-md-6">
                 <div class="card">
-                    <img class="card-img-top img-responsive" src="img/pantalla-a.png"
+                    <img class="card-img-top img-responsive" src="img/pantalla-a2.png"
                          style="border: 1px solid lightgray;">
                     <div class="card-block">
-                        <h4 class="card-title">Buscador Google</h4>
+                        <h4 class="card-title">Google My Business</h4>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Google crea una ficha con la información de tu negocio gratis y no
-                            requiere tener página Web
+                        <li class="list-group-item">
+                            Google crea una ficha <strong>Google My Business</strong> para tu negocio que
+                            contiene datos como teléfono, dirección, localización, horarios, algunas fotos
+                            y hasta evaluaciones de tus clientes con los que podrás interactuar
                         </li>
-                        <li class="list-group-item">La ficha aparece en las Búsquedas de Google, en Maps y en Gooogle+
+                        <li class="list-group-item">
+                            <strong>Muy importante</strong>: la ficha aparece a un lado de los resultados
+                            de las búsquedas en Google, Maps y Google+
                         </li>
-                        <li class="list-group-item">La ficha incluye acceso al recorrido "ver por dentro" de tu
-                            negocio
+                        <li class="list-group-item">
+                            Además, <strong>si tu negocio dispone de uno</strong>,
+                            la ficha incluye un enlace
+                            <a href="https://www.google.com/search?q=bar+bocce%2C+San+Francisco" target="_blank"
+                               class="card-link">"Ver adentro"</a>
+                            a tu <strong>propio recorrido virtual</strong>
+                        </li>
+                        <li class="list-group-item">
+                            La ficha es totalmente gratis y ni tan siquiera requieres tener página Web de tu negocio
                         </li>
                     </ul>
                     <div class="card-block">
@@ -247,23 +242,29 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="card">
-                    <img class="card-img-top img-responsive" src="img/pantalla-b.png"
+                    <img class="card-img-top img-responsive" src="img/pantalla-b2.png"
                          style="border: 1px solid lightgray;">
                     <div class="card-block">
-                        <h4 class="card-title">Google Maps</h4>
+                        <h4 class="card-title">Maps & Street View</h4>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Planta la bandera de tu negocio en Google Maps y conquista a los
-                            clientes
+                        <li class="list-group-item">
+                            <strong>Google Mapas y Google Street View</strong> se han convertido en una herramienta
+                            indispensable a la hora de buscar por bienes y servicios en tu propia ciudad
                         </li>
-                        <li class="list-group-item">Tu presencia en Google Maps como un acceso al recorrido virtual del
-                            interior de tu negocio
+                        <li class="list-group-item">
+                            En <strong>Google Maps</strong>, el <strong>recorrido virtual</strong> de tu negocio aparece en la ficha y además como un punto
+                            <em>amarillo-naranja</em> sobre el mapa y desde donde lo puedes accesar
                         </li>
-                        <li class="list-group-item">Disponible para clientes que busquen tu negocio o similar</li>
+                        <li class="list-group-item">
+                            También, el famoso <strong>Pegman</strong> <img src="img/pegman-3.jpg">
+                            puede ser arrastrado y soltado sobre tu negocio para accesar a tu propio recorrido
+                            justo como si fuera de <strong>Street View</strong>
+                        </li>
                     </ul>
-                    <div class="card-block">
+                    <div class="card-block" style="padding-top: 34px;">
                         <a target="_blank"
                            href="https://www.google.com.mx/maps/place/Bar+Bocce/@37.8595373,-122.4869802,17z/data=!3m1!4b1!4m2!3m1!1s0x808584517196198f:0xc855ef86ebfacffb"
                            class="card-link">Ver ejemplo</a>
@@ -278,7 +279,7 @@
 </section>
 
 <!-- Iris360 Section -->
-<section id="iris360"  >
+<section id="iris360">
     <div class="container-out">
 
         <div class="row">
@@ -353,7 +354,7 @@
 
 
 <!-- Proceso Section -->
-<section id="proceso"  >
+<section id="proceso">
     <div class="container-out">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2" style="padding-bottom: 20px;">
@@ -424,7 +425,7 @@
 </section>
 
 <!-- Why Section -->
-<section id="why" >
+<section id="why">
     <div class="container">
 
         <div class="row">
@@ -501,7 +502,7 @@
 </section>
 
 <!-- Team Section -->
-<section id="team" class="bg-light-gray "  > <!--class="success"-->
+<section id="team" class="bg-light-gray"> <!--class="success"-->
     <div class="container ">
 
         <div class="row">
@@ -623,7 +624,7 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact"  class="success">
+<section id="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">

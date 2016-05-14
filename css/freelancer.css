@@ -531,3 +531,7 @@ footer .footer-below {
     bottom: 4px;
 }
 
+.team-member img {
+    width: 70%;
+    height: auto;
+}

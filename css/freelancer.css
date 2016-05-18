@@ -133,9 +133,19 @@ header .intro-text .skull {
     }
 }
 
+.header-top {
+    position: absolute;
+}
+
 @media(min-width:768px) {
+
+    .navbar-fixed-top .header-top {
+        height: auto;
+        visibility: visible;
+    }
+
     .navbar-fixed-top {
-        padding: 10px 0;
+        padding: 0px 0 5px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -149,7 +159,12 @@ header .intro-text .skull {
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
+        padding: 0px 0 5px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .header-top {
+        height: 0;
+        visibility: hidden;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {

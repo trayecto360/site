@@ -133,16 +133,7 @@ header .intro-text .skull {
     }
 }
 
-.header-top {
-    position: absolute;
-}
-
 @media(min-width:768px) {
-
-    .navbar-fixed-top .header-top {
-        height: auto;
-        visibility: visible;
-    }
 
     .navbar-fixed-top {
         padding: 0px 0 5px 0;
@@ -160,11 +151,6 @@ header .intro-text .skull {
 
     .navbar-fixed-top.navbar-shrink {
         padding: 0px 0 5px 0;
-    }
-
-    .navbar-fixed-top.navbar-shrink .header-top {
-        height: 0;
-        visibility: hidden;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -549,4 +535,15 @@ footer .footer-below {
 .team-member img {
     width: 70%;
     height: auto;
+}
+
+.header-top {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    opacity: 0.4;
+    text-transform: lowercase;
+    color: white;
+    text-align: -webkit-right;
+    width: 100%;
+    font-size: medium;
+    font-weight: lighter;
 }

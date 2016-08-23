@@ -4,9 +4,15 @@
     <title>Google Maps Multiple Markers</title>
     <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ccVpzldUy7Jn-g4arKbNr1zUcSnLd_Y"></script>
+    <style> #map{cursor: pointer;}</style>
 </head>
 <body>
-<div id="map" style="height: 100%; width: 100%;">
+<div id="map" style="height: 100%; width: 100%; ">
+</div>
+<div style="position: absolute; top:55px; left:5px; width: 200px; z-index: 100;">
+    <select id="mySelect" size="10" name="decision2">
+        <option>'1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    </select>
 </div>
 <script type="text/javascript">
     var labels = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -17,7 +23,8 @@
         ['33',  28.715977, -106.133656 , 3],
         ['44',  28.715979, -106.133631 , 4],
         ['55',  28.715960, -106.133631 , 5],
-        ['66',  28.715983, -106.133696 , 6],
+        //['66',  28.715983, -106.133696 , 6],
+        ['66', 28.71599060686649, -106.1336836963892, 6],
         ['77',  28.715970, -106.133720 , 7],
         ['88',  28.715974, -106.133747 , 8],
         ['99',  28.715980, -106.133782 , 9]
@@ -48,6 +55,25 @@
             }
         })(marker, i));
     }
+
+    google.maps.event.addListener(map, 'click', function(event) {
+        placeMarker(event.latLng);
+    });
+
+    function placeMarker(location) {
+        var slc = document.getElementById("mySelect");
+        var option = document.createElement("option");
+        option.text = "" + location + "";
+        slc.add(option)
+        var marker = new google.maps.Marker({
+            position: location,
+            label: 'X',
+            title: '' + location + '',
+            map: map
+        });
+        map.panTo(position);
+    }
+
 </script>
 </body>
 </html>

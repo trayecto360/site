@@ -9,25 +9,20 @@
 <body>
 <div id="map" style="height: 100%; width: 100%; ">
 </div>
-<div style="position: absolute; top:55px; left:5px; width: 200px; z-index: 100;">
-    <select id="mySelect" size="10" name="decision2">
-        <option>'1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    </select>
-</div>
 <script type="text/javascript">
     var labels = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     var labelIndex = 0;
     var locations = [
-        ['11',  28.716013, -106.133648 , 1],
-        ['22',  28.716,    -106.1336667 , 2],
-        ['33',  28.715977, -106.133656 , 3],
-        ['44',  28.715979, -106.133631 , 4],
-        ['55',  28.715960, -106.133631 , 5],
-        //['66',  28.715983, -106.133696 , 6],
-        ['66', 28.71599060686649, -106.1336836963892, 6],
-        ['77',  28.715970, -106.133720 , 7],
-        ['88',  28.715974, -106.133747 , 8],
-        ['99',  28.715980, -106.133782 , 9]
+        ['1',28.716012365914626, -106.13363206386566,1],
+        ['2',28.71600060426753, -106.13365888595581,2],
+        ['3',28.715984137959428, -106.13364547491074,3],
+        ['4',28.715984137959428, -106.1336213350296,4],
+        ['5',28.71596531931837, -106.13362401723862,5],
+        ['6',28.71599119494894, -106.13368302583694,6],
+        ['7',28.715979433299456, -106.1337098479271,7],
+        ['8',28.715979433299456, -106.13374471664429,8],
+        ['9',28.71600060426753, -106.13376349210739,9],
+        ['A',28.71600766125595, -106.1337822675705,10],
 
     ];
 
@@ -54,24 +49,6 @@
                 infowindow.open(map, marker);
             }
         })(marker, i));
-    }
-
-    google.maps.event.addListener(map, 'click', function(event) {
-        placeMarker(event.latLng);
-    });
-
-    function placeMarker(location) {
-        var slc = document.getElementById("mySelect");
-        var option = document.createElement("option");
-        option.text = "" + location + "";
-        slc.add(option)
-        var marker = new google.maps.Marker({
-            position: location,
-            label: 'X',
-            title: '' + location + '',
-            map: map
-        });
-        map.panTo(position);
     }
 
 </script>

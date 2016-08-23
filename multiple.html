@@ -1,0 +1,53 @@
+<html>
+<head>
+
+    <title>Google Maps Multiple Markers</title>
+    <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ccVpzldUy7Jn-g4arKbNr1zUcSnLd_Y"></script>
+</head>
+<body>
+<div id="map" style="height: 100%; width: 100%;">
+</div>
+<script type="text/javascript">
+    var labels = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var labelIndex = 0;
+    var locations = [
+        ['11',  28.716013, -106.133648 , 1],
+        ['22',  28.716,    -106.1336667 , 2],
+        ['33',  28.715977, -106.133656 , 3],
+        ['44',  28.715979, -106.133631 , 4],
+        ['55',  28.715960, -106.133631 , 5],
+        ['66',  28.715983, -106.133696 , 6],
+        ['77',  28.715970, -106.133720 , 7],
+        ['88',  28.715974, -106.133747 , 8],
+        ['99',  28.715980, -106.133782 , 9]
+
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 20,
+        center: new google.maps.LatLng(28.716, -106.133666667),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            label: labels[labelIndex++ % labels.length],
+            map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infowindow.setContent(locations[i][0]);
+                infowindow.open(map, marker);
+            }
+        })(marker, i));
+    }
+</script>
+</body>
+</html>

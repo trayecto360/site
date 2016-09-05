@@ -72,28 +72,29 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <!--
             <div class="header-top">
                 <span style="padding-right: 15px;">(614) 276.2545</span>
                 <span style="padding-right: 15px;">facebook.com/trayecto360</span>
                 <span>info@trayecto360.com</span>
 			</div>
-			-->
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#agencia">Agencia</a>
+                    <a href="#GSV">Google Street Inside</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#recorrido">Recorrido Virtual</a>
+                    <a href="#iris360">Iris360</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#proceso">Proceso</a>
                 </li>
                 <!--                <li class="page-scroll">
                                     <a href="#why">¿Por que?</a>
                                 </li> -->
                 <li class="page-scroll">
-                    <a href="#clientes">Clientes</a>
+                    <a href="#team">Nosotros</a>
                 </li>
                 <li class="page-scroll">
                     <a href="#contact">Contacto</a>
@@ -111,20 +112,74 @@
         <div class="row">
             <div class="col-lg-12 text-center">
 
+                <div id="street-view" class="col-lg-12"
+                     style="height: 60vh; width: 100%; display: block; ">
+                    <script>
+                        var panorama;
+                        function initialize() {
+/*
+                            panorama = new google.maps.StreetViewPanorama(
+                                    document.getElementById('street-view'),
+                                    {
+                                        position: {lat: 37.7958054, lng: -122.403259},
+                                        pov: {heading: 65, pitch: -2},
+                                        zoom: -6,
+                                        scrollwheel: false
+                                    });
+*/
+//http://stackoverflow.com/questions/21992498/disable-mouse-scroll-wheel-zoom-on-embedded-google-maps
 
+                            panorama = new google.maps.StreetViewPanorama(
+                                    document.getElementById('street-view'),
+                                    {
+                                        position: {lat: 28.6486458, lng: -106.1406492},
+                                        pov: {heading: 329.68, pitch: -2},
+                                        zoom: -6,
+                                        scrollwheel: false
+                                    });
+
+
+                        }
+
+                    </script>
+                    <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6ccVpzldUy7Jn-g4arKbNr1zUcSnLd_Y&signed_in=true&callback=initialize">
+                    </script>
+                </div>
+
+                <!--
+                <div class="intro-text" style="
+                    position: absolute;
+                    margin: auto;
+                    top: 100px;
+                    right: 0;
+                    left: 0;
+                    height: 0;
+                ">
+                    <h1 class="skull"
+                        style="padding-top: 30px; width: 100%;
+                                -webkit-text-fill-color: white;
+                                -webkit-text-stroke: 2px #2c3e50;
+                                font-size: -webkit-xxx-large;
+                            ">
+                        Google Street View dentro de tu Negocio
+                    </h1>
+                </div>
+                -->
 
             </div>
         </div>
     </div>
 </header>
 
+<!-- GSV Section -->
 <section class="info" id="GSV">
     <div class="container-out">
 
-        <div class="row col-lg-offset-3">
-            <div class="col-lg-8 text-center">
+        <div class="row">
+            <div class="col-lg-12 text-center">
                 <h4 class="section-subheading">¿Ya sabes que es <a href="http://www.google.com/maps/streetview/">Google Street View?</a></h4>
-                <h3 class="service-heading">Ahora gánate la confianza de tus clientes potenciales agregando un Recorrido Virtual a tu negocio</h3>
+                <h3 class="service-heading">Ahora imagínatelo dentro de tu propio Negocio</h3>
                 <img class="img-responsive img-centered" src="img/logos/icono-uno.png" alt="">
             </div>
         </div>
@@ -132,28 +187,36 @@
         <div class="row" style="padding-top: 30px">
             <div class="col-lg-6 col-lg-offset-1 ">
                 <div class="timeline-image">
-                    <img class="img-responsive" src="img/pantalla-busqueda-mediana.jpg" alt="">
+                    <img class="img-responsive" src="img/pantalla-busqueda.jpg" alt="">
                 </div>
             </div>
             <div class="col-lg-4 text-justify">
                 <!-- <div class="timeline-image col-lg-offset-2"> -->
                 <div class="timeline-image col-lg-offset-2">
-                    <img class="img-responsive" src="img/google-logos-solo.png" alt="">
+                    <img class="img-responsive" src="img/google-logos-trusted.png" alt="">
                 </div>
-                <ul class="ul-imagen" style="">
-
+                <ul class="ul-imagen">
                     <li>
-                        <p>Cada vez más los clientes potenciales usan las búsquedas en Google para encontrar un bien o servicio en la ciudad, y una vez encontrado, usan Google Maps para llegar a él. Inclusive, ahora navegan por Google Street View para darse una idea de como es el negocio por fuera</p>
+                        <p><strong>Google</strong> esta extendiendo el alcance de su poderosisimo <strong>Street
+                            View</strong> permitiendo que le conectes un <strong>recorrido virtual de 360°</strong>
+                            de <strong>tu propio negocio</strong>
                     </li>
                     <li>
-                        <p>Trayecto360 te lleva al siguiente nivel creando un recorrido virtual al interior de tu negocio permitiendo que tus clientes potenciales puedan visitarte y finalmente ganarte su confianza e  intención de compra</p>
-                        </li>
+                        <p>Imaginate, <strong>el interior de tu negocio</strong> puesto al alcance de <strong>todo el mundo</strong>
+                        más fácil y más rápido y desde cualquier dispositivo...
+                            <em style="font-size: 110%; color: #c7254e;  background-color: #f9f2f4; border-radius: 4px;" >
+                                mayor contundencia para anunciarte ¡Imposible!</em>
+                        (<a href="https://youtu.be/kMWxBpM-MSA" target="_blank">ver video</a>)</p>
+                    </li>
                     <li>
-                        <p>Un recorrido virtual es determinante en la intención de compra de los clientes potenciales</p>
-                        </li>
+                        <p>Nosotros, <strong>Trayecto360</strong> somos una agencia autorizada por <strong>Google</strong>
+                            para desarrollar <strong>recorridos virtuales para tu empresa</strong> y agregarlos al <strong>Street View</strong></p>
+                    </li>
+                    <li>
+                        <p>Porque siemple y sencillamente no puedes dejar al interior de tu negocio fuera del <strong>Street View</strong>;
+                        sería como decir que no necesitas al <strong>Facebook</strong></p>
+                    </li>
                 </ul>
-                <p style="margin-left: 25px; font-size: smaller">Fuente: <i>The power of media-rich map listings</i> - by Google
-                    <a href="https://static.googleusercontent.com/media/www.google.com/es//streetview/hire/Power-of-maps-listings.pdf" target="_blank">Resumen</a></p>
 
             </div>
         </div>
@@ -163,70 +226,8 @@
 </section>
 <!-- api key AIzaSyC6ccVpzldUy7Jn-g4arKbNr1zUcSnLd_Y -->
 
-
-<section class="info" id="agencia">
-    <div class="container">
-
-        <div class="row"  style="margin-top: 60px;">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading  text-center">Trayecto360</h2>
-                <h4 class="section-subheading  text-center">
-                    Capturamos tu negocio en 360° y te lo ponemos en Street View
-                </h4>
-            </div>
-        </div>
-
-        <div class="row text-justify col-lg-offset-1">
-            <div class="col-md-5">
-                <div class="card">
-                    <div class="card-block">
-                        <h4 class="card-title">Agencia de Confianza Google</h4>
-                    </div>
-                    <img class="card-img-top img-responsive" src="img/logo-trusted.png" style="margin-left: auto; margin-right: auto;">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <p>Somos una agencia especializada en crear recorridos virtuales para Street View</p>
-                        </li>
-                        <li class="list-group-item">
-                            <p>Contamos con la insignia de confianza de Google</p>
-                        </li>
-                        <li class="list-group-item">
-                            <p>Somos la única agencia en Chihuahua</p>
-                        </li>
-                    </ul>
-                    <div class="card-block">
-                        <a href="https://www.google.com/intl/es/streetview/hire/" target="_blank"
-                           class="card-link">Ver índice de confianza</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-5">
-                <div class="card">
-                    <div class="card-block">
-                        <h4 class="card-title">Iris360</h4>
-                    </div>
-                    <img class="card-img-top img-responsive" src="img/iris-rotation.gif" style="margin-left: auto; margin-right: auto;">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <p>Usamos <strong>Iris360</strong>: la cámara de 360° más sofisticada aprobada por Google y única de 32mil Mega-Pixeles</p>
-                        </li>
-                    </ul>
-                    <div class="card-block" style="padding-top: 0px;">
-                        <a target="_blank"
-                           href="https://www.nctechimaging.com/iris360/#samples"
-                           class="card-link">Ver imagen de ejemplo</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
 <!-- GSV-cards Section -->
-<section class="info" id="recorrido">
+<section class="info" id="GSV-cards">
     <div class="container">
 
         <div class="row" style="margin-top: 60px;">
@@ -464,9 +465,64 @@
 </section>
 -->
 
+<!-- Iris360 Section -->
+<section id="iris360">
+    <div class="container-out">
+
+        <div class="row"  style="margin-top: 60px;">
+            <div class="col-lg-12 text-center">
+                <h3 class="section-subheading">Capturamos tu negocio en 360° y te lo ponemos en Google Street View</h3>
+                <h4 class="service-heading">usando la cámara más sofisticada y única autorizada por Google</h4>
+                <h3 class="service-heading">
+                    <i class="fa fa-star" style="padding: 0 15px 0 15px;"></i>
+                    Iris360
+                    <i class="fa fa-star" style="padding: 0 15px 0 15px;"></i>
+                </h3>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 15px">
+
+            <div class="col-lg-5 col-lg-offset-1 ">
+                <div class="timeline-image col-lg-offset-1  text-justify">
+                    <img class="img-responsive" src="img/logos/NCTech_logo_colour_black_2X.png" alt="">
+                    <ul class="ul-imagen">
+                        <li>
+                            <p><strong>NCTech</strong> a trabajado en conjunto con Google para desarrollar la cámara
+                                <strong>Iris360</strong>
+                                con tecnología de punta capaz de capturar foto-esferas de 360° con un sólo disparo, de
+                                alta resolución y cálidad</p>
+                        </li>
+                        <li>
+                            <p>La cámara <strong>Iris360</strong> también es capaz
+                                de publicar automática y directamente en la aplicación de Google Street View</p>
+                        </li>
+                        <li><p><strong>Iris360</strong> de <strong>NCTech</strong> es la única cámara esférica aprobada
+                            por
+                            Google para usarla
+                            en la creación de recorridos para Google Street View Inside;
+                            <strong>por eso es la única con el logo de Google Street View</strong>
+                        </p></li>
+                        <li>
+                            <p><strong>Trayecto360</strong> es la única agencia en Chihuahua y de las pocas en todo
+                                México
+                                que tiene la <strong>Iris360</strong></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 ">
+                <div class="timeline-image ">
+                    <img class="img-responsive" src="img/iris-rotation.gif" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 
 <!-- Proceso Section -->
-<!--
 <section id="proceso">
     <div class="container-out">
         <div class="row"  style="margin-top: 60px;">
@@ -544,7 +600,6 @@
     </div>
 
 </section>
--->
 
 <!-- Why Section -->
 <!--
@@ -626,6 +681,158 @@
 -->
 
 <!-- Team Section -->
+<section id="team" class="bg-light-gray"> <!--class="success"-->
+    <div class="container ">
+
+        <div class="row"  style="margin-top: 60px;">
+            <div class="col-lg-12 text-center">
+                <h3 class="section-subheading">Nosotros</h3>
+                <h4 class="service-heading text-muted">Nuestra filosofía es simple:</h4>
+                <h4 class="service-heading  text-muted">
+                    <em>que nuestro trabajo le aporte un beneficio a nuestros clientes</em>
+                </h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="team-member">
+                    <img src="img/team/yo.png" class="img-responsive img-circle" alt="">
+                    <h4>Juan Calderón</h4>
+                    <p class="text-muted" style="margin-bottom: 5px;">Experto en tecnologías Google</p>
+                    <p class="text-muted" style="font-size: smaller;">MSc Web Technologies at <a
+                            href="http://mcs.unibnf.ch/" target="_blank">UniBNF</a> </p>
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="https://www.facebook.com/Chauderon">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <!-- <a href="https://www.facebook.com/Chauderon"><i class="fa fa-facebook-square"></i></a> -->
+                        </li>
+                        <li>
+                            <a href="mailto:juan.calderon@trayecto360.com" data-toggle="tooltip" data-placement="rigth"
+                               title="juan.calderon@trayecto360.com">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="team-member">
+                    <img src="img/team/pris-1.png" class="img-responsive img-circle" alt="">
+                    <h4>Priscila Prieto</h4>
+                    <p class="text-muted" style="margin-bottom: 5px;">Ventas en Delicias</p>
+                    <!--
+                                        <p class="text-muted" style="font-size: smaller;">ML Adminstración de empresas <a
+                                                href="http://www.uach.mx/" target="_blank">Uach</a></p>
+                    -->
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="#" id="face-pris">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:juan.calderon@trayecto360.com" data-toggle="tooltip" data-placement="rigth"
+                               title="priscila.prieto@trayecto360.com">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="team-member">
+                    <img src="img/team/mario.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Mario Salgado</h4>
+                    <p class="text-muted" style="margin-bottom: 5px;">Desarrollo de recorridos</p>
+                    <!--
+                                        <p class="text-muted" style="font-size: smaller;">Ing. Industrial y de Sistemas
+                                            <a href="http://www.uach.mx/" target="_blank">Uach</a>
+                                            e
+                                            <a href=" http://www.itchihuahua.edu.mx/" target="_blank">Itch</a>
+                                            </p>
+                    -->
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="https://www.facebook.com/marioalbertosalgado">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <!-- <a href="https://www.facebook.com/Chauderon"><i class="fa fa-facebook-square"></i></a> -->
+                        </li>
+                        <li>
+                            <a href="mailto:mario.salgado@trayecto360.com" data-toggle="tooltip" data-placement="rigth"
+                               title="mario.salgado@trayecto360.com">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="team-member">
+                    <img src="img/team/miguel.jpg" class="img-responsive img-circle" alt="">
+                    <h4>Miguel Alvarado</h4>
+                    <p class="text-muted" style="margin-bottom: 5px;">Ventas en Chihuahua</p>
+                    <ul class="list-inline social-buttons">
+                        <li>
+                            <a href="https://www.facebook.com/miguel.alvarado.52643">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <!-- <a href="https://www.facebook.com/Chauderon"><i class="fa fa-facebook-square"></i></a> -->
+                        </li>
+                        <li>
+                            <a href="mailto:miguel.alvarado@trayecto360.com" data-toggle="tooltip" data-placement="rigth"
+                               title="miguel.alvarado@trayecto360.com">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col-lg-9 col-lg-offset-1">
+                    <p class="large text-muted text-center">En nuestro quehacer profesional
+                        utilizamos a profundidad varias tecnologías y servicios del eco-sistema de Google lo que nos ha
+                        permitido un
+                        <em>firme expertise</em> en el uso de las herramientas usadas para la creación, edición y
+                        publicación
+                        de recorridos Google Stree View Inside</p>
+                </div>
+            </div>
+            -->
+        </div>
+        <div class="row">
+        </div>
+
+    </div>
+</section>
 
 <!-- Contact Section -->
 <section id="contact">
@@ -635,13 +842,12 @@
                 <h3>Contacto</h3>
                 <hr class="star-primary">
                 <h4 class="service-heading">¿Listo para iniciar tu Trayecto 360 o para saber más? ¡Perfecto! </h4>
-                <h5 class="service-heading">Nos contactas, te presupuestamos, capturamos las fotos y en una semana ves los resultados</h5>
             </div>
         </div>
 
         <div class="row text-center">
             <div class="col-lg-4">
-                <img class="" src="img/whatsapp.png" style="width:45px; height:45px; visibility: visible; animation-name: bounceIn;"></img>
+                <i class="fa fa-phone fa-3x wow bounceIn" style="visibility: visible; animation-name: bounceIn;"></i>
                 <h3>(614) 276-2545</h3>
             </div>
             <div class="col-lg-4">

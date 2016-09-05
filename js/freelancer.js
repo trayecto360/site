@@ -53,10 +53,10 @@ var curHeight = $("#nav-id").height();
 var curT = $("#nav-id").css('padding-top').replace("px", "")
 var curB = $("#nav-id").css('padding-bottom').replace("px", "");
 var t = Number(curHeight) + Number(curB) + Number(curT);
-$('#my-id').css('padding-top', t + 'px');
+$('#my-id-NOHACERLO').css('padding-top', t + 'px');
 $( window ).resize(function() {
-    curHeight = $("#nav-id").height();
-    if (curHeight !== preHeight) {
+    curHeight = $("#nav-id-NOHACERLO").height();
+    if (false && curHeight !== preHeight) {
         curT = $("#nav-id").css('padding-top').replace("px", "")
         curB = $("#nav-id").css('padding-bottom').replace("px", "");
         t = Number(curHeight) + Number(curB) + Number(curT);

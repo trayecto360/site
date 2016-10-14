@@ -35,7 +35,7 @@
             });
             map.setOptions({ draggableCursor: 'crosshair' });
 
-            var labels = ['1','2','3','4','5','6','7','8','9','10','11','12'];
+            var labels = ['1','2','3','4','5','6','7','8','9','0','A','B','C','D','E','F','G','H','I','J','K','L','M'];
             var labelIndex = 0;
             document.getElementById("txtCopy").value = '';
             google.maps.event.addListener(map, 'click', function(event) {
@@ -58,7 +58,7 @@
                     label: lbl,
                     title: ltdLong,
                     map: map,
-                    icon: pinIcon,
+                    icon: "/site/img/icons/gsvMark.png",
                     labelClass: "labels"
                 });
                 //map.panTo(position);

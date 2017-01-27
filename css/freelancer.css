@@ -194,7 +194,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #eee;
 }
 
 section.success a,
@@ -206,6 +206,12 @@ section.success a.active {
     color: #2c3e50;
 }
 
+section#contact-sub {
+    background-color: lightslategray;
+    background-image: url(../img/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 @media(max-width:767px) {
     section {
         padding: 75px 0;

@@ -228,8 +228,11 @@ section#contact-sub {
 }
 
 #portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 30px;
+    /* right: 0; */
+    /* margin: 0 0 30px; */
+    padding-left: 0;
+    padding-right: 0;
+    padding: 2px;
 }
 .card #portfolio .portfolio-item .portfolio-link {
     display: block;
@@ -570,4 +573,8 @@ footer .footer-below {
     width: 100%;
     font-size: medium;
     font-weight: lighter;
+}
+
+.list-group-item {
+    border: 0px solid #ecf0f1;
 }
